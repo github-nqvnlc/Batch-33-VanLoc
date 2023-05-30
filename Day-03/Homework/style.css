@@ -1,0 +1,32 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 700px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding: 10px 0;
+}
+h3 {
+  padding: 10px 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0fc702;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #0a9100;
+}

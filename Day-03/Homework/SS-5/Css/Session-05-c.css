@@ -1,0 +1,66 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 700px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a:hover {
+  color: #0a9100;
+}
+
+.menu {
+  padding: 10px 0;
+}
+
+h1 {
+  padding: 20px 0;
+}
+h3 {
+  padding: 20px 0;
+}
+
+h2::before {
+  background-image: url("../images/vietnam.png");
+  background-size: 100%;
+  background-position: center;
+  display: inline-block;
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+  content: "";
+}
+
+h2::after {
+  content: url("../images/quochuy.png");
+  margin-left: 10px;
+}
+
+p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+p.paragraph-1::first-letter {
+  color: red;
+  font-size: 28px;
+}
+
+p.paragraph-2::first-line {
+  color: blue;
+  text-transform: capitalize;
+}
