@@ -10,6 +10,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* header */
+
 .header {
   background-color: #ff7b00;
 }
@@ -56,6 +58,18 @@ nav ul li > a {
   font-weight: 600;
 }
 
+nav ul li .cart {
+  line-height: 50px;
+}
+
+nav ul li .cart a {
+  text-decoration: none;
+  color: #ff9100;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 nav ul li .navsub {
   display: none;
   position: absolute;
@@ -80,4 +94,110 @@ nav ul li .navsub a {
 nav ul li .navsub a:hover {
   background-color: #ff9100;
   color: #fff;
+}
+
+/* Content */
+
+.content-product {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.left img {
+  width: 400px;
+}
+
+.title-product {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price-discount {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ff9100;
+}
+
+.price-main {
+  font-size: 24px;
+  font-weight: 300;
+  color: #7e7e7e;
+}
+
+.color-product {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-product ul {
+  display: block;
+  list-style: none;
+  height: 50px;
+}
+
+.color-product ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #ababab;
+}
+
+.color-product ul li:hover {
+  border: 2px solid #000;
+}
+
+.note {
+  padding: 10px 0;
+}
+
+.note p {
+  padding: 10px 0;
+}
+
+.note p span {
+  font-weight: 500;
+}
+
+.button-group {
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.button-add {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff7b00;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-call {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #18285c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
 }
