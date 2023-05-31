@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Horizontal Navigation */
+
+.horizontal-nav {
+  background-color: #75929a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #017cfc;
+}
+
+/* Vertical Navigation */
+
+.vertical-nav {
+  margin-top: 50px;
+}
+
+.nav {
+  width: 200px;
+}
+
+.logo i {
+  padding: 10px;
+  color: #1da1f2;
+  font-size: 24px;
+}
+
+ul.menu {
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul li {
+  height: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+ul li i {
+  width: 24px;
+  text-align: center;
+  position: relative;
+}
+
+ul li i .dot {
+  height: 7px;
+  width: 7px;
+  background-color: #1da1f2;
+  border-radius: 100%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-tweet {
+  margin-top: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #1da1f2;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+}

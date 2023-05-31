@@ -51,6 +51,7 @@ nav ul li {
 nav ul li:hover {
   background-color: #ff9100;
 }
+
 nav ul li > a {
   color: #fff;
   line-height: 50px;
@@ -79,8 +80,24 @@ nav ul li .navsub {
   box-shadow: 0 1px 4px 0 rgb(0 0 0 / 37%);
 }
 
+nav ul li a .down {
+  display: inline-block;
+}
+
+nav ul li a .up {
+  display: none;
+  line-height: 18px;
+}
+
 nav ul li:hover .navsub {
   display: block;
+}
+
+nav ul li:hover a .up {
+  display: inline-block;
+}
+nav ul li:hover a .down {
+  display: none;
 }
 
 nav ul li .navsub a {
