@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- task 1 -->
+    <button onclick="checkNumber()">Kiểm tra số</button>
+
+    <!-- task2 -->
+    <button onclick="checkDay()">Nhập ngày</button>
+
+    <!-- task 3 -->
+    <h1>Chương trình tính toán đơn giản</h1>
+
+    <label for="a">Số a:</label>
+    <input type="number" name="a" />
+
+    <label for="b">Số b:</label>
+    <input type="number" name="b" />
+
+    <label for="op">Phép tính:</label>
+    <select name="op">
+      <option value="add">Cộng</option>
+      <option value="subtract">Trừ</option>
+      <option value="multiply">Nhân</option>
+      <option value="divide">Chia</option>
+      <option value="modulus">Chia lấy dư</option>
+    </select>
+
+    <button onclick="calculate()">Tính toán</button>
+
+    <p id="result"></p>
+
+    <script>
+      function checkNumber() {
+        // Nhận đầu vào từ người dùng
+        var number = prompt("Nhập một số:");
+
+        // Kiểm tra số đó là chẵn hay lẻ
+        if (number % 2 === 0) {
+          alert(number + " là số chẵn.");
+        } else {
+          alert(number + " là số lẻ.");
+        }
+      }
+
+      function checkDay() {
+        var numberInput = parseInt(prompt("Nhập một số từ 2 đến 8:"));
+
+        // Kiểm tra ngày trong tuần
+        if (numberInput === 2 || numberInput === 3) {
+          alert("Hôm nay là đầu tuần.");
+        } else if (numberInput >= 4 && numberInput <= 6) {
+          alert("Hôm nay là giữa tuần.");
+        } else if (numberInput === 7 || numberInput === 8) {
+          alert("Hôm nay là cuối tuần.");
+        } else {
+          alert("Ngày không hợp lệ.");
+        }
+      }
+
+      function calculate() {
+        var a = parseFloat(document.getElementsByName("a")[0].value);
+        var b = parseFloat(document.getElementsByName("b")[0].value);
+        var op = document.getElementsByName("op")[0].value;
+        var resultElement = document.getElementById("result");
+        var result;
+
+        // Thực hiện phép tính tương ứng
+        if (op === "add") {
+          result = a + b;
+        } else if (op === "subtract") {
+          result = a - b;
+        } else if (op === "multiply") {
+          result = a * b;
+        } else if (op === "divide") {
+          result = a / b;
+        } else if (op === "modulus") {
+          result = a % b;
+        }
+
+        // Hiển thị kết quả
+        resultElement.textContent = "Kết quả: " + result;
+      }
+
+
+      let myArr = [
+        "Thứ 2",
+        "Thứ y",
+        "Thứ 3",
+        "Thứ x",
+        "Thứ 5",
+        "Thứ 6",
+        "Thứ 7",
+      ];
+
+      myArr.push("Chủ nhật");-
+      myArr[3] = "Thứ 4";
+      myArr.splice(1, 1);
+
+
+      let html = "<ul>";
+      myArr.forEach((item) => {
+        html += `<li>${item}</li>`;
+      });
+      html += "</ul>";
+      document.write(html);
+    </script>
+  </body>
+</html>

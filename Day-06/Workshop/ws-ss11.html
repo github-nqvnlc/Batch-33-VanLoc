@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="clickButton()">Click me</button>
+    <script>
+      console.log(
+        "Task 1: Thực hành lại kiến thức JavaScript đã học về biến và kiểu dữ liệu"
+      );
+      var a = 10;
+      var b = 20;
+
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+
+      // change value of a and b
+      var a = 40;
+      var b = 30;
+
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+
+      console.log("Task 2: ");
+      //   sử dụng hàm prompt() để nhập vào 2 số a và b
+      //   sử dụng hàm alert() để hiển thị kết quả của các phép tính cộng, trừ, nhân, chia, chia lấy dư của 2 số a và b
+      var a = parseInt(prompt("Nhập số a: "));
+      var b = parseInt(prompt("Nhập số b: "));
+      alert("a + b = " + (a + b));
+      alert("a - b = " + (a - b));
+      alert("a * b = " + a * b);
+      alert("a / b = " + a / b);
+
+      //   Sử dụng HTML tạo ra một Button, sử dụng JavaScript để bắt sự kiện onclick và in ra màn hình console một message 'Bạn đã Click'
+      function clickButton() {
+        alert("Bạn đã Click");
+      }
+
+      //   Có một sinh viên tên là Nguyễn Văn A, Tuổi là 20, Giới tính: True là Nam, False Nữ, Quê: Hà Nội.
+      // - Các bạn tạo biến để thể hiện thông tin trên.
+      // - Xuất ra màn hình / console giá trị của biến
+
+      let name = "Nguyễn Văn A";
+      let age = "20";
+      let gender = true;
+      let address = "Hà Nội";
+
+      console.log(
+        "Tên: ",
+        name,
+        ", ",
+        age,
+        "tuoi",
+        "gioi tinh: ",
+        gender ? "Nam" : "Nữ",
+        address
+      );
+
+      
+    </script>
+  </body>
+</html>

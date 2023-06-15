@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <style>
+    .owl-stage-outer {
+      position: relative;
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    .owl-nav button {
+      position: absolute;
+      background-color: #fff !important;
+      width: 25px !important;
+      height: 25px !important;
+      border-radius: 100px !important;
+      box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .owl-nav button:hover {
+      scale: 2;
+      transition: 0.2s;
+      color: #000 !important;
+      background-color: #fff !important;
+    }
+
+    .owl-nav button.owl-prev {
+      left: -20px;
+    }
+
+    .owl-nav button.owl-next {
+      right: -20px;
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .owl-dot span:hover {
+      background-color: #c92127 !important;
+    }
+
+    .active span {
+      background-color: #c92127 !important;
+      width: 30px !important;
+    }
+  </style>
+  <body>
+    <button id="button">Add to Cart</button>
+    <button id="clear">Clear Cart</button>
+
+    <!-- Carousel Banner -->
+    <div style="margin: 0 auto; max-width: 1200px" class="container">
+      <div style="padding-top: 10px" class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/Fahasasalethu3_mainbanner_Bo1_Slider_840x320.jpg"
+            alt="1"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/McBooksT6V2_Slide_840x320_Ver1_1.jpg"
+            alt="2"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/Backtoschool_trangtong_mainbanner_Slide_840x320.jpg"
+            alt="3"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/TrangDoChoiT623_Banner_Slide_840x320Thang6.jpg"
+            alt="4"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/CTKMThang6__840x320.jpg"
+            alt="5"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/HoaCuQuy_Banner_840x320_T623.jpg"
+            alt="6"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/DinhTi_PlatinumT623_BannerSlide_840x320.jpg"
+            alt="7"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://cdn0.fahasa.com/media/magentothem/banner7/Main_Banner__Category_Page.jpg"
+            alt="8"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      // ## Task 1
+      // Thực hành tạo key tên mình và lưu xuống localStorage, sessionStorage
+      // - Sau đó Xóa đi
+
+      localStorage.setItem("name", "Nguyen Van A");
+      sessionStorage.setItem("name", "Nguyen Van B");
+
+      //xóa localStorage
+      localStorage.removeItem("name");
+      //xóa sessionStorage
+      sessionStorage.removeItem("name");
+
+      // ## Task 2
+      // - Tạo ra một button tên: Thêm vào giỏ hàng
+      // - Khi click vào button này thì lưu xuống localStorage một object
+      //       ```js
+      // let product = {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+
+      // //Tạo thành một mảng như dưới
+      // let products = [
+      //     {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+      //     {id: 1, name: 'iPhone 4', price: 200, quantity: 1},
+      //     {id: 1, name: 'iPhone 4', price: 200, quantity: 1}
+      // ];
+      // ```
+
+      // - Mỗi lần click là lưu xuống và thành một mảng object
+
+      // - Sau đó lấy tất cả sản phẩm từ localStorage hiển thị ra màn hình
+
+      let products = [];
+
+      let button = document.getElementById("button");
+      button.addEventListener("click", function () {
+        let product = {
+          id: 1,
+          name: "iPhone 4",
+          price: 200,
+          quantity: 1,
+        };
+        alert(`Thêm vào giỏ hàng thành công ${product.name}`);
+        products.push(product);
+        localStorage.setItem("products", JSON.stringify(products));
+      });
+
+      let clear = document.getElementById("clear");
+      clear.addEventListener("click", function () {
+        localStorage.removeItem("products");
+      });
+
+      // - Tạo một carousel Banner
+      // - Tạo một carousel Sản phẩm
+
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        items: 1,
+      });
+    </script>
+  </body>
+</html>

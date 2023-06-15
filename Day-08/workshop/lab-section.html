@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="a" />
+    <select name="op">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+      <option value="modulus">%</option>
+    </select>
+    <input type="number" name="b" />
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+    <script>
+      // ## Task 1
+      // Tạo các hàm tính các phép tính + - * / hai số mong muốn. In ra màn hình hoặc console giá trị phép tính.
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      function subtract(a, b) {
+        return a - b;
+      }
+
+      function multiply(a, b) {
+        return a * b;
+      }
+
+      function divide(a, b) {
+        return a / b;
+      }
+
+      let a = 10;
+      let b = 5;
+
+      console.log(`${a} + ${b} = ${add(a, b)}<br>`);
+      console.log(`${a} - ${b} = ${subtract(a, b)}<br>`);
+      console.log(`${a} * ${b} = ${multiply(a, b)}<br>`);
+      console.log(`${a} / ${b} = ${divide(a, b)}<br>`);
+
+      //  ## Task 2
+      // - Tạo một chương trình tính toán đơn giản với 2 số.
+      // - Sử dụng các phép tính: cộng, trừ, nhân, chia
+      // - Bằng cách tạo giao diện html với:
+      //   - input có name: a
+      //   - input có name: b
+      //   - select có name: op (với quy ước add = cộng, subtract = trừ, multiply = nhân, divide = chia, modulus = chia lấy dư)
+      //   - In ra kết quả của phép tính
+
+      function calculate() {
+        let a = parseInt(document.querySelector("input[name=a]").value);
+        let b = parseInt(document.querySelector("input[name=b]").value);
+        let op = document.querySelector("select[name=op]").value;
+        let result = document.querySelector("#result");
+
+        switch (op) {
+          case "add":
+            result.innerHTML = `${a} + ${b} = ${add(a, b)}`;
+            break;
+          case "subtract":
+            result.innerHTML = `${a} - ${b} = ${subtract(a, b)}`;
+            break;
+          case "multiply":
+            result.innerHTML = `${a} * ${b} = ${multiply(a, b)}`;
+            break;
+          case "divide":
+            result.innerHTML = `${a} / ${b} = ${divide(a, b)}`;
+            break;
+          case "modulus":
+            result.innerHTML = `${a} % ${b} = ${modulus(a, b)}`;
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
