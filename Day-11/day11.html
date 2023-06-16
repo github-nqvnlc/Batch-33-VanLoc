@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="header bg-body-tertiary">
+      <div class="container bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="body mt-3 mb-5">
+      <div class="container">
+        <div class="row align-items-start gy-5">
+          <div class="col-12 col-lg-3">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A list item</div>
+                  <span class="badge bg-primary">14</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A seconds item</div>
+                  <span class="badge bg-primary">2</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div class="item">A third item</div>
+                  <span class="badge bg-primary">1</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    style="height: 400px; object-fit: cover"
+                    src="https://cdn.baogiaothong.vn/upload/2-2022/images/2022-05-25/2-1653445668-926-width740height481.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    style="height: 400px; object-fit: cover"
+                    src="https://cdn.baogiaothong.vn/upload/2-2022/images/2022-05-25/11-1653445668-973-width740height469.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    style="height: 400px; object-fit: cover"
+                    src="https://anhdep123.com/wp-content/uploads/2021/01/tai-anh-dep-thien-nhien-4k-cho-may-tinh-scaled.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-3">Promotion Products</h2>
+        <div class="row align-items-center mt-2 g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x200.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2 g-3">
+          <div class="col-12 col-lg-6">
+            <img
+              style="width: 100%; object-fit: cover"
+              src="https://via.placeholder.com/545x120.png"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              style="width: 100%; object-fit: cover"
+              src="https://via.placeholder.com/545x120.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h2 class="mt-3">News</h2>
+        <div class="row align-items-center mt-2 g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x120.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x120.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x120.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" style="width: auto">
+              <img
+                style="height: 200px; object-fit: cover"
+                src="https://via.placeholder.com/200x120.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-body-tertiary mt-3 pt-5 pb-2">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-12 col-lg-3">
+            <h2>Short Intro</h2>
+            <p style="text-align: justify; margin-top: 2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Explicabo cupiditate, tempora laudantium magni repudiandae,
+              sapiente molestiae voluptas quod illum perferendis pariatur,
+              assumenda voluptates debitis quia. Blanditiis sequi voluptatibus
+              ipsa commodi.
+            </p>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h3>Subtitle</h3>
+            <ul>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h3>Subtitle</h3>
+            <ul>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h3>Subtitle</h3>
+            <ul>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+
+        <div class="copyright p-3">
+          <p>© 2023 Develop by Van Loc</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
