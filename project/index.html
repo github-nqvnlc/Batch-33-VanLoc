@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elessi Shopping</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="">
+      <div id="top-header" class="bg-gray-100 px-5 border-b">
+        <div
+          class="max-w-full h-10 px-10 flex items-center justify-center lg:justify-between"
+        >
+          <div class="gap-3 flex items-center justify-center">
+            <a class="text-xs hover:text-black" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="text-xs hover:text-black" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="text-xs hover:text-black" href="#">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a class="text-xs hover:text-black" href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a class="text-xs hover:text-black" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="text-xs hover:text-black" href="#"> Call: </a>
+            <a class="text-xs hover:text-black" href="#"> +01 23456789 </a>
+          </div>
+          <div class="gap-0 items-center justify-start hidden lg:flex">
+            <div class="relative group py-2">
+              <a
+                id="lang-choose"
+                class="text-xs font-light uppercase px-2 py-1 border-r hover:text-black"
+                href="#"
+                >English<span class="ml-2 text-xs"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+              <div
+                class="absolute right-0 mt-2 z-10 hidden shadow-xl ring-1 ring-black ring-opacity-5 bg-white group-hover:block"
+              >
+                <div class="flex flex-col w-40">
+                  <a
+                    id="lang-vi"
+                    class="text-xs p-2 hover:text-emerald-500 uppercase"
+                    href="#"
+                    >Vietnam</a
+                  >
+                  <a
+                    id="lang-en"
+                    class="text-xs p-2 hover:text-emerald-500 uppercase"
+                    href="#"
+                    >English</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="relative group py-2">
+              <a
+                id="money-choose"
+                class="text-xs font-light uppercase px-2 py-1 border-l hover:text-black"
+                href="#"
+                >USD<span class="ml-2"
+                  ><i class="fa-solid fa-chevron-down text-xs"></i></span
+              ></a>
+              <div
+                class="absolute mt-2 right-0 z-50 hidden shadow-lg bg-white ring-1 ring-black ring-opacity-5 group-hover:block"
+              >
+                <div class="flex flex-col w-40">
+                  <a
+                    id="usd"
+                    class="text-xs p-2 hover:text-emerald-500 uppercase"
+                    href="#"
+                    >USD</a
+                  >
+                  <a
+                    id="eur"
+                    class="text-xs p-2 hover:text-emerald-500 uppercase"
+                    href="#"
+                    >EUR</a
+                  >
+                  <a
+                    id="vnd"
+                    class="text-xs p-2 hover:text-emerald-500 uppercase"
+                    href="#"
+                    >VND</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="navbar" class="px-1 md:px-5 border-b bg-white">
+        <div
+          class="max-w-full h-100 py-10 px-2 lg:px-10 flex items-center justify-between"
+        >
+          <div class="block md:hidden text-lg hover:text-emerald-500">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="w-24">
+            <img class="w-full" id="logo" src="./assets/logo.webp" alt="logo" />
+          </div>
+          <div class="items-center justify-between gap-5 hidden md:flex">
+            <a
+              class="text-[14px] font-semibold tracking-wider uppercase hover:text-emerald-500"
+              href="#"
+              >Demo<span class="ml-1"
+                ><i class="fa-solid fa-chevron-down text-xs"></i></span
+            ></a>
+            <div class="relative">
+              <a
+                class="text-[14px] font-semibold tracking-wider uppercase hover:text-emerald-500"
+                href="#"
+                >shop<span class="ml-1"
+                  ><i class="fa-solid fa-chevron-down text-xs"></i></span
+              ></a>
+              <div>
+                <span
+                  class="absolute right-0 -top-5 z-50 bg-red-400 text-gray-100 text-[9px] font-bold uppercase leading-3 tracking-widest px-1 py-0.5"
+                  >Sale</span
+                >
+                <span
+                  class="absolute right-5 -top-5 z-10 text-red-400 text-[20px]"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+              </div>
+            </div>
+
+            <a
+              class="text-[14px] font-semibold tracking-wider uppercase hover:text-emerald-500"
+              href="#"
+              >blog<span class="ml-1"
+                ><i class="fa-solid fa-chevron-down text-xs"></i></span
+            ></a>
+            <a
+              class="text-[14px] font-semibold tracking-wider uppercase hover:text-emerald-500"
+              href="#"
+              >pages<span class="ml-1"
+                ><i class="fa-solid fa-chevron-down text-xs"></i></span
+            ></a>
+
+            <div class="relative">
+              <a
+                class="text-[14px] font-semibold tracking-wider uppercase hover:text-emerald-500"
+                href="#"
+                >buy theme</a
+              >
+              <div>
+                <span
+                  class="absolute right-0 -top-5 z-50 bg-red-400 text-gray-100 text-[9px] font-bold uppercase leading-3 tracking-widest px-1 py-0.5"
+                  >Sale!</span
+                >
+                <span
+                  class="absolute right-5 -top-5 z-10 text-red-400 text-[20px]"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-5 mr-2">
+            <a
+              class="text-[20px] hover:text-emerald-500 hidden md:block"
+              href="#"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a class="text-[20px] hover:text-emerald-500" href="#">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <div class="relative hidden md:block">
+              <a class="text-[20px] hover:text-emerald-500" href="#">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <span class="absolute -top-1 -right-2 w-4 h-4">
+                <span class="relative flex h-full w-full">
+                  <span
+                    class="animate-ping absolute h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative rounded-full h-full w-full bg-emerald-500 text-white text-[9px] text-center leading-4 font-bold"
+                    >1</span
+                  >
+                </span>
+              </span>
+            </div>
+
+            <div class="relative">
+              <a class="text-[20px] hover:text-emerald-500" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+              <span class="absolute -top-1 -right-2 w-4 h-4">
+                <span class="relative flex h-full w-full">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative rounded-full h-full w-full bg-emerald-500 text-white text-[9px] text-center leading-4 font-bold"
+                    >1</span
+                  >
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <main>
+      <div
+        class="max-w-full px-10 my-10 flex items-center justify-center lg:justify-between"
+      >
+        <div class="flex flex-col justify-center items-center p-5 w-full">
+          <div class="text-[32px] font-extrabold">Featured Categories</div>
+          <div class="flex justify-center items-center gap-12 py-5 my-5 w-full">
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/cloth.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Cloth
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/medical-mask.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Medical Mask
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/premium.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Premium
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/face-shields.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Face Shields
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/mask-pattern.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Mask Pattern
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <div class="rounded-sm w-56">
+                <img class="w-full" src="./assets/featured/surgical.webp" />
+              </div>
+              <div
+                class="text-lg font-bold text-center capitalize text-gray-700"
+              >
+                Surgical
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-full px-10 my-10 flex items-center justify-center lg:justify-between"
+      >
+        <div class="flex flex-col justify-center items-center p-5 w-full">
+          <div class="text-[32px] font-extrabold capitalize">
+            Recommend for you
+          </div>
+          <div class="flex justify-center items-center gap-5 py-5 my-5 w-full">
+            <div
+              id="btn-re"
+              class="w-48 text-center text-[16px] font-medium tracking-wider uppercase p-1 outline outline-1 hover:bg-zinc-800 hover:text-gray-200 focus:bg-zinc-800 focus:text-gray-200 cursor-pointer"
+              tabindex="0"
+            >
+              new arrival
+            </div>
+            <div
+              id="btn-re"
+              class="w-48 text-center text-[16px] font-medium tracking-wider uppercase p-1 outline outline-1 hover:bg-zinc-800 hover:text-gray-200 focus:bg-zinc-800 focus:text-gray-200 cursor-pointer"
+              tabindex="0"
+            >
+              best selling
+            </div>
+            <div
+              id="btn-re"
+              class="w-48 text-center text-[16px] font-medium tracking-wider uppercase p-1 outline outline-1 hover:bg-zinc-800 hover:text-gray-200 focus:bg-zinc-800 focus:text-gray-200 cursor-pointer"
+              tabindex="0"
+            >
+              on sale
+            </div>
+            <div
+              id="btn-re"
+              class="w-48 text-center text-[16px] font-medium tracking-wider uppercase p-1 outline outline-1 hover:bg-zinc-800 hover:text-gray-200 focus:bg-zinc-800 focus:text-gray-200 cursor-pointer"
+              tabindex="0"
+            >
+              featured
+            </div>
+          </div>
+          <div class="w-full" id="product"></div>
+
+          <div class="flex flex-col items-center justify-center w-80">
+            <div class="relative">
+              <img
+                src="./assets/products/pt-1.webp"
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute top-0 right-0">
+                <div class="text-[24px] font-bold py-1 px-2 rounded-full">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-full py-2">
+              <div class="flex flex-col justify-start items-start">
+                <div class="text-[16px] font-bold">Product Name</div>
+                <div class="flex justify-start items-center gap-1">
+                  <div class="text-[24px] font-bold">$</div>
+                  <div class="text-[24px] font-bold">100</div>
+                </div>
+              </div>
+              <div class="flex"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End main -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js"></script>
+    <script></script>
+  </body>
+</html>

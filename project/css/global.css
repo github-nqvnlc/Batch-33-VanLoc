@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555555;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-size: 14.5px;
+  line-height: 1.2;
+}
+
+.f-jc-c {
+  @apply flex justify-center items-center;
+}
